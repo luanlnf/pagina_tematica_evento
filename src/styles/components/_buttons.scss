@@ -1,0 +1,24 @@
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 3%;
+    text-align: center;
+    white-space: nowrap;
+
+    &--primary {
+        color: #fff;
+        background-color: #9c3bf7dc;
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+    }
+    @media (max-width: 640px){
+        display: block;
+        width: 100%;
+        
+    }
+}
