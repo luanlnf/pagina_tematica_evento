@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Roboto:wght@400;700&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
@@ -16,7 +16,8 @@
             <img class="hero__logo" src="./images/logofesta.png" alt="festa">
 
             <p class="hero__text">
-                Melhor festa de aniversário temática vem ai começa em 6d 12h 20m 12s!! 
+                Melhor festa de aniversário temática vem ai começa em <br>
+                <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
@@ -39,7 +40,53 @@
             </div>
         </div>
     </header>
+    <section class="event event--tematica">
+        <div class="container"  data-aos="zoom-in"> 
+            <div class="event__details">
+                <h2 class="event__details__title">Festa Temática</h2>
+                <p class="event__details__description">
+                    Mais do que uma simples comemoração, essa festa de aniversário temática se torna uma verdadeira viagem ao universo do Halloween, onde a fantasia, o mistério e a diversão andam de mãos dadas, proporcionando uma noite inesquecível para todos os participantes.
+                </p>
+            </div>
+            <img class="event__image" src="./images/tema.jpg" alt="tematica">
+        </div>
+    </section>
+    <section class="event event--fantasia event--image-left">
+        <div class="container" data-aos="fade-up-right"> 
+            <div class="event__details">
+                <h2 class="event__details__title">Festa á Fantasia</h2>
+                <p class="event__details__description">
+                    As fantasias são parte essencial da festa, permitindo que todos entrem no espírito do evento. Bruxas, vampiros, fantasmas e criaturas misteriosas percorrem o local, tornando a experiência ainda mais imersiva. Jogos e atividades temáticas, como concursos de fantasia e brincadeiras de terror, garantem a diversão de todos. 
+                </p>
+            </div>
+            <img class="event__image" src="./images/fantasia.jpg" alt="fantasia">
+        </div>
+    </section>
+    <section class="event event--palhaco">
+        <div class="container" data-aos="zoom-in"> 
+            
+            <div class="event__details">
+                <h2 class="event__details__title">Terá Palhaços</h2>
+                <p class="event__details__description">
+                    Palhaços assustadores são um elemento clássico em temas de Halloween, evocando um clima de suspense e desconforto, especialmente se forem inspirados por filmes de terror ou tiverem maquiagens mais intensas e perturbadoras. Eles podem interagir com os convidados de maneira brincalhona, mas ao mesmo tempo sinistra, criando uma experiência divertida e assustadora.
+                </p>
+            </div>
+            <img class="event__image" src="./images/palhaço.jpg" alt="palhaço">
+        </div>
+    </section>
+    <section class="event event--bebidas event--image-left">
+        <div class="container" data-aos="fade-up-left"> 
+            <div class="event__details">
+                <h2 class="event__details__title">Bebidas Temáticas</h2>
+                <p class="event__details__description">
+                    As bebidas temáticas em uma festa de Halloween são uma maneira criativa de surpreender os convidados, combinando visual assustador com sabores deliciosos. As bebidas não apenas têm um visual assustador e divertido, mas também proporcionam sabores marcantes que complementam a experiência temática da festa!
+                </p>
+            </div>
+            <img class="event__image" src="./images/bebidas.jpg" alt="bebidas">
+        </div>
+    </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
